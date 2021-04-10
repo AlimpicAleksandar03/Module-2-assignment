@@ -1,0 +1,66 @@
+/* css reset*/
+* {
+  box-sizing: border-box;
+  padding-top: 0;
+  margin: 0;
+}
+
+/* mobile layout */
+h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.row {
+  width: 90%;
+  margin: auto;
+}
+
+.box {
+  height: 30px;
+  width: 100px;
+  border: 1px solid black;
+  background: pink;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  padding-top: 4px;
+}
+
+section {
+  background-color: rgb(99, 26, 26);
+  border: 1px solid black;
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 40px 15px 5px 15px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+/* Tablet layout */
+@media (min-width: 769px) and (max-width: 991px) {
+  .first-section,
+  .second-section {
+    float: left;
+    width: 48.4%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .third-section {
+    clear: both;
+    width: 98%;
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  section {
+    float: left;
+    width: 32%;
+    margin-left: 10px;
+  }
+}
