@@ -6,29 +6,29 @@
 }
 
 /* mobile layout */
-h2 {
+.heading {
   text-align: center;
   margin: 10px 0;
 }
 
-.row {
+.container {
   width: 90%;
   margin: auto;
 }
 
-.box {
+.section-title {
   height: 30px;
-  width: 100px;
+  min-width: 100px;
   border: 1px solid black;
   background: pink;
   position: absolute;
   top: 0;
   right: 0;
   text-align: center;
-  padding-top: 4px;
+  line-height: 30px;
 }
 
-section {
+.section {
   background-color: rgb(99, 26, 26);
   border: 1px solid black;
   width: 100%;
@@ -41,15 +41,15 @@ section {
 
 /* Tablet layout */
 @media (min-width: 769px) and (max-width: 991px) {
-  .first-section,
-  .second-section {
+  .section-one,
+  .section-two {
     float: left;
     width: 48.4%;
     margin-left: 10px;
     margin-bottom: 10px;
   }
 
-  .third-section {
+  .section-three {
     clear: both;
     width: 98%;
     margin: 0 10px;
@@ -57,7 +57,7 @@ section {
 }
 
 @media (min-width: 992px) {
-  section {
+  .section {
     float: left;
     width: 32%;
     margin-left: 10px;
